@@ -12,6 +12,7 @@ public class GreetingService {
     public GreetingService() {
         System.out.println("GreetingService init");
     }
+
     String sayHi() {
         return "hello world";
     }
