@@ -5,10 +5,12 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 
+import static org.springframework.beans.factory.config.ConfigurableBeanFactory.SCOPE_PROTOTYPE;
+
 @Service
-@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE,
-        proxyMode = ScopedProxyMode.TARGET_CLASS)
+@Scope(SCOPE_PROTOTYPE)
 public class GreetingService {
+
     public GreetingService() {
         System.out.println("GreetingService init");
     }
