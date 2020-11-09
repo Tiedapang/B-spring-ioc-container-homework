@@ -8,10 +8,6 @@ public class Bar {
 
     private Foo foo;
 
-    public Bar(@Lazy Foo foo) {
-        this.foo = foo;
-    }
-
     public void hi() {
         System.out.println("Hi, " + foo.name());
     }
